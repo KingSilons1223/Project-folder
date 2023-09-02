@@ -125,8 +125,65 @@ footer {
     }
 }
 
+/* ... [Your existing CSS] ... */
+
+/* Universal transition for hover and focus for better touch responsiveness */
+a:focus,
+a:hover,
+button:focus,
+button:hover {
+    outline: none;
+    transform: scale(1.05);
+}
+
+/* Tablet devices (768px and up) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Adjustments for tablet view */
+    .main-content {
+        max-width: 90%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 0 10px;
+    }
+
+    nav a {
+        padding: 10px 12px;
+    }
+
+    /* Animations for tablet */
+    nav a {
+        transform: translateY(0);
+        transition: transform 0.4s ease, background-color 0.3s ease;
+    }
+
+    nav a:hover {
+        transform: translateY(-5px);
+    }
+
+    .content-box {
+        animation: fadeIn 0.8s forwards, moveUp 0.6s forwards;
+    }
+
+    @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
+
+    @keyframes moveUp {
+        0% { transform: translateY(20px); }
+        100% { transform: translateY(0); }
+    }
+}
+
 /* Phone devices (480px and below) */
 @media (max-width: 480px) {
+    /* Adjustments for phone view */
     .main-content {
         max-width: 100%;
         padding: 1rem;
@@ -152,11 +209,37 @@ footer {
         font-size: 0.9rem;
     }
 
-    .content-box {
-        padding: 10px;
+    /* Animations for phone */
+    nav li {
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: stackNfade 0.5s forwards;
     }
 
-    footer {
-        position: relative;
+    nav li:nth-child(1) { animation-delay: 0.1s; }
+    nav li:nth-child(2) { animation-delay: 0.2s; }
+    nav li:nth-child(3) { animation-delay: 0.3s; }
+    nav li:nth-child(4) { animation-delay: 0.4s; }
+    nav li:nth-child(5) { animation-delay: 0.5s; }
+    nav li:nth-child(6) { animation-delay: 0.6s; }
+
+    @keyframes stackNfade {
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .content-box {
+        opacity: 0;
+        transform: translateX(-10%);
+        animation: fadeInFromLeft 0.8s forwards;
+    }
+
+    @keyframes fadeInFromLeft {
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }
