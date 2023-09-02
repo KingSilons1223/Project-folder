@@ -98,7 +98,6 @@ footer {
 .papa {
     color: #6b8e23;
 }
-
 /* ... [Your existing CSS] ... */
 
 /* Tablet devices (768px and up) */
@@ -125,86 +124,38 @@ footer {
     }
 }
 
-/* ... [Your existing CSS] ... */
-
-/* Universal transition for hover and focus for better touch responsiveness */
-a:focus,
-a:hover,
-button:focus,
-button:hover {
-    outline: none;
-    transform: scale(1.05);
-}
-
-/* ... [Your existing CSS] ... */
-
-/* Transitions for smooth effects */
-.content-box {
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.content-box:hover {
-    transform: scale(1.03);
-    opacity: 0.9;
-}
-
-/* Tablet devices (768px and up) */
-@media (min-width: 481px) and (max-width: 768px) {
-    .main-content {
-        max-width: 90%;
-        padding: 1rem;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav li {
-        margin: 0.5rem 0;
-    }
-
-    nav a {
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-    }
-
-    .content-box {
-        transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    .content-box:hover {
-        transform: scale(1.05);
-        opacity: 0.9;
-    }
-}
-
 /* Phone devices (480px and below) */
 @media (max-width: 480px) {
     .main-content {
-        max-width: 95%;
-        padding: 0.5rem;
+        max-width: 100%;
+        padding: 1rem;
     }
 
     header {
+        font-size: 0.9rem;
         padding: 0.5rem 0;
-        font-size: 1.2rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     nav li {
-        margin: 0.3rem 0;
+        margin: 5px 0;
     }
 
     nav a {
-        padding: 0.5rem 1rem;
+        padding: 8px 10px;
         font-size: 0.9rem;
     }
 
     .content-box {
-        transition: transform 0.5s ease, opacity 0.5s ease;
+        padding: 10px;
     }
 
-    .content-box:hover {
-        transform: scale(1.07);
-        opacity: 0.9;
+    footer {
+        position: relative;
     }
 }
