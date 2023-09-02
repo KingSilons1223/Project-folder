@@ -1,0 +1,127 @@
+* {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef5e9;  /* Soft, pastel green reminiscent of leafy undertones */
+    color: #333;  /* Dark text for better readability against a light background */
+    transition: all 0.3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #2c6f3d;  /* A shade of forest green for a dense, forested look */
+    color: #f5deb3;  /* A wheat color for contrast against the green */
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main {
+    margin: 20px 10px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.main:hover {
+    background-color: rgba(245, 222, 179, 0.5); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03) translateY(-3px);  /* Bounce effect */
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);  /* Cubic bezier for bounce effect */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;    /* Center the cards horizontally */
+    gap: 20px;              /* Space between each card */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05) rotate(-5deg);  /* Rotation effect combined with scaling */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.join {
+    background-color: #556b2f;  /* Olive green, conveying a sense of earthiness */
+    border: none;
+    color: #f8f3f3;  /* Soft white for contrast */
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.join:hover {
+    background-color: #214a27;  /* Deep forest green for hover effect */
+    transform: translateY(-3px) rotate(-2deg);  /* Slight tilt effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+footer {
+    background-color: #214a27; /* Deep forest green for a harmonious feel */
+    color: #f5deb3;  /* A wheat color for contrast */
+    padding: 20px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);  /* A shadow at the top of the footer to give it depth */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distributes content evenly */
+    align-items: center;
+    max-width: 1200px;  /* Maximum width for the content */
+    margin: 0 auto;     /* Centering the content */
+    padding: 0 20px;    /* Padding on sides */
+}
+
+.footer-content p {
+    margin: 0;  /* Removing default margins */
+}
+
+.footer-content nav ul {
+    list-style: none;  /* Removing bullet points */
+    padding: 0;        /* Removing default padding */
+    display: flex;     /* Aligning list items horizontally */
+    gap: 20px;         /* Space between list items */
+}
+
+.footer-content nav a {
+    text-decoration: none;  /* Removing underlines */
+    color: #214a27;         /* Using the same wheat color for consistency */
+    transition: 0.3s ease;  /* Smooth transition for hover effect */
+}
+
+.footer-content nav a:hover {
+    color: #eef5e9;  /* Soft green color on hover */
+}
+.crazy{
+    color: #6b8e23;
+}
