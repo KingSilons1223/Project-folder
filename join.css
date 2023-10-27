@@ -1,0 +1,62 @@
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:#eef5e9;  /* Soft, pastel green reminiscent of leafy undertones */;
+    color: #333;  /* Dark text for better readability against a light background */
+    transition: all 0.3s ease;
+}
+
+body {
+    overflow-x: hidden;
+}
+header {
+    background-color: #2c6f3d;  /* A shade of forest green for a dense, forested look */
+    color: #f5deb3;  /* A wheat color for contrast against the green */
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.topboy{
+    background-color:#eef5e9;
+    color:  #2c6f3d; 
+    text-align: inherit;
+}
+.Sully{
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+.Sully-content{
+    padding: 15px;
+}
+.Sully:hover{
+    transform: scale(1.05) rotate(-5deg);  /* Rotation effect combined with scaling */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+.jaq {
+    background-color: #556b2f;  /* Olive green, conveying a sense of earthiness */
+    border: none;
+    color: #f8f3f3;  /* Soft white for contrast */
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+.jaq:hover {
+    background-color: #214a27;  /* Deep forest green for hover effect */
+    transform: translateY(-3px) rotate(-2deg);  /* Slight tilt effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
